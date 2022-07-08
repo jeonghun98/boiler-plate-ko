@@ -4,7 +4,7 @@ const port = 3000
 
 
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://jeonghun:wlfl70@boilerplate.ruemuzi.mongodb.net/?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://jeonghun:a12345@boilerplate.t5ulwqh.mongodb.net/?retryWrites=true&w=majority', {
 }).then(() => console.log('MongoDB Connected...'))
   .catch(err => console.log(err))
 
