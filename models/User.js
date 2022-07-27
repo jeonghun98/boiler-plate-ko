@@ -70,7 +70,7 @@ userSchema.methods.generateToken = function(cb) {
     // user._id + 'secretToken' = token
     // ->
     // 'secretToken' => user._id
-    user.toekn = token
+    user.token = token
     user.save(function(err, user) {
         if(err) return cb(err)
         cb(null, user)
@@ -78,7 +78,7 @@ userSchema.methods.generateToken = function(cb) {
     
 }
 
-userSchema.static.findByToken = function(token, cb) {
+userSchema.statics.findByToken = function(token, cb) {
     var user = this;
     
     
